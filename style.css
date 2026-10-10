@@ -1,0 +1,114 @@
+nav {
+    background-color: #192c42;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+nav h2 {
+    color: #e2e8f0;
+}
+.liens {
+    display: flex;
+    gap: 30px;
+    margin-left: auto;
+}
+#Accueil {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #eff5fa;
+}
+#Accueil a {
+    display:inline-block ;
+    background-color: #2563eb;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+#Services {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: white;
+}
+.carte {
+    background-color: white;
+    padding: 30px;
+    border-radius: 30px;
+    border: 1px solid #e2e8f0;
+    max-width: 250px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    transition: transform 0.3s ease;
+}
+.carte:hover {
+    transform: translateY(-8px);
+}
+.cartes { 
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+    display: flex;
+}
+body {
+    font-family: arial, sans-serif;
+    margin: 0;
+}
+#contact {
+    background-color: #eff5fa;
+    text-align: center;
+    padding: 80px 20px;
+}
+#contact form { 
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 450px;
+    margin: 30px auto;
+}
+#contact input,
+#contact textarea {
+    padding: 12;
+    border:1px solid #cbd5e1;
+    border-radius: 8px;
+    font-family: arial, sans-serif;
+    font-size: 16px;
+}
+
+#contact button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+    background-color: #1d4ed8;
+}
+#contact input,
+#contact textarea,
+#contact button {
+    box-sizing: border-box;
+    width: 100%;
+}
+nav a {
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #60a5fa;
+}
