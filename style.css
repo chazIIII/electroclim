@@ -112,3 +112,9 @@ nav a {
 nav a:hover {
     color: #60a5fa;
 }
+footer {
+    background-color: #192c42;
+    color: #e2e8f0;
+    text-align: center;
+    padding: 20px;
+}
