@@ -1,120 +1,158 @@
-nav {
-    background-color: #192c42;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: auto;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
-
-nav a {
+#accueil{
+    background-color: #14243a;
     color: white;
-    text-decoration: none;
-}
-nav h2 {
-    color: #e2e8f0;
-}
-.liens {
-    display: flex;
-    gap: 30px;
-    margin-left: auto;
-}
-#Accueil {
     text-align: center;
-    padding: 80px 20px;
-    background-color: #eff5fa;
+    padding:100px 20px;
 }
-#Accueil a {
-    display:inline-block ;
+#accueil a {
+    display: inline-block;
     background-color: #2563eb;
     color: white;
     padding: 15px 25px;
+    border-radius:  8px;
     text-decoration: none;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+#accueil a:hover {
+    background-color: #1d4ed8;
+}
+#projets {
+    padding: 60px 20px;
+    text-align: center;
+}
+.liste-projets {
+    display: flex;
+    gap: 20px;
+}
+.projet {
+    flex : 1;
+    background-color: #1e3654;
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.35s ease-in-out;
+}
+.projet:hover {
+    transform: translateY(-4px);
+}
+@media (max-width: 600px) {
+    .liste-projets {
+        flex-direction: column;
+    }
+}
+.projet a { 
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 20px;
     border-radius: 8px;
+    text-decoration: none;
+    margin-top: 15px;
 }
-#Services {
-    text-align: center;
-    padding: 80px 20px;
-    background-color: white;
-}
-.carte {
-    background-color: white;
-    padding: 30px;
-    border-radius: 30px;
-    border: 1px solid #e2e8f0;
-    max-width: 250px;
-    margin: 20px auto;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    transition: transform 0.3s ease;
-}
-.carte:hover {
-    transform: translateY(-8px);
-}
-.cartes { 
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    text-align: center;
-    display: flex;
-}
-body {
-    font-family: arial, sans-serif;
-    margin: 0;
+#accueil a:hover {
+    background-color: #1d4ed8;
 }
 #contact {
-    background-color: #eff5fa;
+    background-color: #e2edf7;
     text-align: center;
-    padding: 80px 20px;
+    padding: 60px 20px;
 }
-#contact form { 
+#form-contact {
     display: flex;
     flex-direction: column;
     gap: 15px;
     max-width: 450px;
     margin: 30px auto;
 }
-#contact input,
-#contact textarea {
-    padding: 12;
-    border:1px solid #cbd5e1;
+#form-contact input,
+ #form-contact textarea {
+    background-color: #142949;
+    color: #eaecf1;
+    padding: 15px;
+    border: 1px solid #fdfdfd;
     border-radius: 8px;
-    font-family: arial, sans-serif;
     font-size: 16px;
 }
-
-#contact button {
+#form-contact button {
     background-color: #2563eb;
     color: white;
-    border: none;
     padding: 15px;
-    border-radius: 8px;
-    font-size: 16px;
+    border: none;
+    border-radius: 10px;
     cursor: pointer;
+    font-size: 16px;
     transition: background-color 0.3s ease;
 }
-
-#contact button:hover {
+form-contact button:hover {
     background-color: #1d4ed8;
 }
-#contact input,
-#contact textarea,
-#contact button {
-    box-sizing: border-box;
-    width: 100%;
+nav {
+    background-color: #14243a;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    position: sticky;
+    top: 0;
 }
-nav a {
+nav a { 
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
     transition: color 0.3s ease;
 }
-
 nav a:hover {
     color: #60a5fa;
 }
+html { 
+    scroll-behavior: smooth;
+}
+section {
+    scroll-margin-top: 80px;
+}
 footer {
-    background-color: #192c42;
-    color: #e2e8f0;
+    background-color: #14243a;
+    color: white;
     text-align: center;
-    padding: 20px;
+    padding: 25px;
+    font-size: 14px;
+}
+#services {
+    padding: 60px 20px;
+    text-align: center;
+}
+.services {
+    background-color: #1e3654;
+    color: rgb(31, 35, 90);
+    padding: 30px;
+    border-radius: 12px;
+    margin: 20px auto;
+    max-width: 900px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+   transition: transform 0.4s ease;
+}
+
+.service:hover {
+    transform: translateY(-2px);
+}
+.services h3 {
+    color: #ffffff;
+    font-size: 22px;
+    margin-top: 0;
+}
+#services .service {
+    background-color: #1e3654;
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    margin: 20px auto;
+    max-width: 900px;
+    transition: transform 0.4s ease-in-out;
 }
